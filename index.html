@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="button-selection">
+            <button data-aos="fade-right" id="tipCalculator">TipCalculator</button>
+            <button data-aos="fade-left"id="whoPaysTheBill">WhoPaysTheBIll</button>
+        </div>
+        <div class="container-main hide" id="tipCalculatorDiv">
+            <h1>Tip Calculator</h1>
+            <div class="container-input">
+                <label>Tip Percent ( % )</label>
+                <input type="number" id="tipPercent" placeholder="20">
+                <label>Total Amount of the Bill</label>
+                <input type="number" id="billAmount" placeholder="15,500">
+                <div class="button">
+                    <button id="reset">Reset</button>
+                    <button id="calculateButton">Calculate</button>
+                </div>
+                <input id="result" placeholder="3100" readonly>
+                <label>Amount to Tip</label>
+            </div>
+            <div class="instructions">
+            <h4>Instructions:</h4>
+            <p>Step 1: Enter the percentage of tip you have to give.</p>
+            <p>Step 2: Enter the amount of total bill</p>
+            <p>Step 3: Click "Calculate"</p>
+            <p>Step 4: Click "Reset" to restart the App</p>
+            </div>
+        </div>
+        <div class="container-main hide" id="whoPaysTheBillDiv">
+            <h1>Who Pays The Bill</h1>
+            <h3 id="h3"></h3>
+            <div class="container-input">
+                <label>Enter Names of Participants</label>
+                <input type="text" id="participants" placeholder="Enter names here">
+                <button id="addNameButton">Add Name</button>
+                    <fieldset class="append-container">
+                        <legend>Participants</legend>
+                        <div id="appendContainer"></div>
+                    </fieldset>
+                <div class="button">
+                    <div class="button">
+                    <button id="resetTwo">Reset</button>
+                    <button id="startButton">Start</button>
+                    </div>
+                </div>
+            </div>
+            <div class="instructions">
+            <h4>Instructions:</h4>
+            <p>Step 1: Enter the name of a participant</p>
+            <p>Step 2: Click "Add Name" to add their name</p>
+            <p>Step 3: Click "Start" and get a random participant</p>
+            <p>Step 4: Click "Reset" to restart the App</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

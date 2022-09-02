@@ -1,0 +1,150 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background: #141E30;
+    background: -webkit-linear-gradient(to top, #243B55, #141E30);
+    background: linear-gradient(to top, #243B55, #141E30);
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #f0f8ff;
+}
+
+h3 {
+  color: green;  
+}
+
+#result {
+    margin-top: 2rem;
+}
+
+#appendContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 150px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.button-selection {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-selection button {
+    padding: 10px;
+    width: 10rem;
+    margin: 2rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.container-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 768px;
+    width: 578px;
+    border: 1px solid aliceblue;
+    border-radius: 5px;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container-input input {
+    background-color: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.container-input input:focus {
+    outline: 0 none;
+}
+
+.container-input label {
+    margin: 0.5rem 0;
+    color: white;
+}
+
+.container-input button {
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.button button {
+    padding: 10px;
+    width: 10rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.button button:hover, .button-selection button:hover, .container-input button:hover {
+    background-color: #141E30;
+    transition: 500ms;
+}
+
+.instructions {
+    color: white;
+}
+
+.instructions p {
+    font-size: 14px;
+}
+
+.append-container {
+    color: white;
+    text-align: left;
+    border: 1px solid white;
+    margin-top: 1rem;
+    border-radius: 5px;
+    padding: 13px;
+    max-width: 295px;
+}
+
+.append-container p {
+    text-align: center;
+    padding: 5px;
+}
+
+.show {
+    display: flex;
+}
+
+.hide {
+    display: none;
+}
+
+@media only screen and (max-width: 578px) {
+    
+    .container-main {
+        height: 100vh;
+        width: 100vw;
+        border: none;
+    }
+}

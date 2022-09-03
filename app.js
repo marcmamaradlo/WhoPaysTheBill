@@ -213,4 +213,4 @@ operationButtons.map(operation => {
 // Open Calculator End //
 
 
-// AOS.init();
+AOS.init();

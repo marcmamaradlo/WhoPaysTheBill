@@ -36,7 +36,10 @@ h3 {
 
 .button-selection {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     flex-direction: row;
+    margin: auto;
 }
 
 .button-selection button {
@@ -132,6 +135,33 @@ h3 {
     padding: 5px;
 }
 
+.add-participants .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.button .remove-one, .button .add-one {
+    width: 2.5rem;
+    margin: 0;
+}
+
+.button .static-input {
+    border: none;
+    width: 5rem;
+    margin-top: 1rem;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.container-input .amount-to-pay {
+    text-align: center;
+    font-size: 24px;
+    border: none;
+}
+
 .show {
     display: flex;
 }
@@ -142,9 +172,68 @@ h3 {
 
 @media only screen and (max-width: 578px) {
     
+    .container {
+        height: 100%;
+    }
+
     .container-main {
         height: 100vh;
         width: 100vw;
         border: none;
     }
 }
+
+/* Open Calculator */
+/* p {
+    font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+} */
+
+
+
+.display {
+    background: #243B55;
+    height: 7rem;
+    padding: 10px;
+}
+
+.display p {
+    color: white;
+    font-family: 'Inconsolata', monospace;
+    text-align: right;
+    font-size: 55px;
+}
+
+.section {
+    display: flex;
+}
+
+.section button {
+    border: none;
+    border-radius: 0px;
+    height: 100px;
+    width: 100px;
+    font-family: 'Inconsolata', monospace;
+}
+
+.section .extended {
+    width: 200px;
+}
+
+.calculator {
+    box-shadow: -10px 10px 20px black;
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 390px) {
+    .container-input {
+        width: 20rem;
+        border: 0px none;
+    }
+
+    .calculator {
+        border: 1px solid black;
+    }
+}
+
+/* Open Calculator End */

@@ -7,16 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400;500;600;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+    </style>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Split The Bill</title>
 </head>
 <body>
     
     <div class="container">
         <div class="button-selection">
-            <button data-aos="fade-right" id="tipCalculator">TipCalculator</button>
-            <button data-aos="fade-left"id="whoPaysTheBill">WhoPaysTheBIll</button>
+            <button ata-aos="fade-right" id="tipCalculator">TipCalculator</button>
+            <button ata-aos="fade-left" id="whoPaysTheBill">WhoPaysTheBIll</button>
+            <button ata-aos="fade-left" id="splitTheBill">SplitTheBill</button>
+            <button ata-aos="fade-left" id="openCalculator">OpenCalculator</button>
         </div>
         <div class="container-main hide" id="tipCalculatorDiv">
             <h1>Tip Calculator</h1>
@@ -64,6 +69,112 @@
             <p>Step 2: Click "Add Name" to add their name</p>
             <p>Step 3: Click "Start" and get a random participant</p>
             <p>Step 4: Click "Reset" to restart the App</p>
+            </div>
+        </div>
+
+        <div class="container-main hide" id="splitTheBillDiv">
+            <h1>Split The Bill</h1>
+            <div class="container-input">
+                <div class="add-participants">
+                    <label>Number of Participants</label>
+                    <div class="button">
+                        <button class="remove-one" id="removeOne">-</button>
+                        <input class="static-input" type="number" id="staticInput" placeholder="0" min="2" max="100" readonly>
+                        <button class="add-one" id="addOne">+</button>
+                    </div>
+                </div>
+                <label>Total Amount To Split</label>
+                <input type="number" id="amountToSplit" placeholder="Please enter the amount here">
+                <label>everyone has to pay:</label>
+                <input class="amount-to-pay" type="number" id="amountToPay" placeholder="0" readonly>
+                <div class="button">
+                    <div class="button">
+                    <button id="resetThree">Reset</button>
+                    <button id="splitButton">Split</button>
+                    </div>
+                </div>
+            </div>
+            <div class="instructions">
+            <h4>Instructions:</h4>
+            <p>Step 1: Enter the number of a participants</p>
+            <p>Step 2: Enter the total amount of the bill</p>
+            <p>Step 3: Click "Split" to split the amount</p>
+            <p>Step 4: Click "Reset" to restart the App</p>
+            </div>
+        </div>
+
+        <div class="container-main" id="openCalculatorDiv">
+            <h1>Calculator</h1>
+            <div class="container-input calculator">
+                <div class="display">
+                    <p id="current"></p>
+                </div>
+                <div class="section">
+                    <button id="allClear" class="extended">AC</button>
+                    <button id="delete">DEL</button>
+                    <button id="operator">/</button>
+                </div>
+                <div class="section">
+                    <button id="button">7</button>
+                    <button id="button">8</button>
+                    <button id="button">9</button>
+                    <button id="operator">*</button>
+                </div>
+                <div class="section">
+                    <button id="button">4</button>
+                    <button id="button">5</button>
+                    <button id="button">6</button>
+                    <button id="operator">-</button>
+                </div>
+                <div class="section">
+                    <button id="button">1</button>
+                    <button id="button">2</button>
+                    <button id="button">3</button>
+                    <button id="operator">+</button>
+                </div> 
+                <div class="section">
+                    <button id="button">.</button>
+                    <button id="button">0</button>
+                    <button id="equals" class="extended">=</button>
+                </div>             <!-- <div class="main">
+                    <div class="current">
+                        <p id="current"></p>
+                    </div>
+                    <div class="divider">
+                        <div class="wide">
+                            <button id="allClear">AC</button>
+                        </div>
+                        <div>
+                            <button id="delete">DEL</button>
+                        </div>
+                        <div>
+                            <button id="operator" class="darker">/</button>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <div><button id="button">7</button></div>
+                        <div><button id="button">8</button></div>
+                        <div><button id="button">9</button></div>
+                        <div><button id="operator" class="darker">*</button></div>
+                    </div>
+                    <div class="divider">
+                        <div><button id="button">4</button></div>
+                        <div><button id="button">5</button></div>
+                        <div><button id="button">6</button></div>
+                        <div><button id="operator" class="darker">-</button></div>
+                    </div>
+                    <div class="divider">
+                        <div><button id="button">1</button></div>
+                        <div><button id="button">2</button></div>
+                        <div><button id="button">3</button></div>
+                        <div><button id="operator" class="darker">+</button></div>
+                    </div>
+                    <div class="divider">
+                        <div><button id="button">.</button></div>
+                        <div><button id="button">0</button></div>
+                        <div class="wide"><button id="equals" class="darker" id="equals">=</button></div>
+                    </div>
+                </div> -->
             </div>
         </div>
     </div>

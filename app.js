@@ -18,6 +18,7 @@ tipCalculatorButton.addEventListener('click', () => {
     whoPaysTheBillDiv.style.display = 'none';
     splitTheBillDiv.style.display = 'none';
     openCalculatorDiv.style.display = 'none';
+    scrollFunc();
 });
 
 whoPaysTheBillButton.addEventListener('click', () => {
@@ -25,6 +26,7 @@ whoPaysTheBillButton.addEventListener('click', () => {
     tipCalculatorDiv.style.display = 'none';
     splitTheBillDiv.style.display = 'none';
     openCalculatorDiv.style.display = 'none';
+    scrollFunc();
 });
 
 splitTheBillButton.addEventListener('click', () => {
@@ -32,6 +34,7 @@ splitTheBillButton.addEventListener('click', () => {
     tipCalculatorDiv.style.display = 'none';
     whoPaysTheBillDiv.style.display = 'none';
     openCalculatorDiv.style.display = 'none';
+    scrollFunc();
 });
 
 openCalculatorButton.addEventListener('click', () => {
@@ -39,6 +42,7 @@ openCalculatorButton.addEventListener('click', () => {
     splitTheBillDiv.style.display = 'none';
     tipCalculatorDiv.style.display = 'none';
     whoPaysTheBillDiv.style.display = 'none';
+    scrollFunc();
 });
 // Selection Buttons End //
 
@@ -211,6 +215,12 @@ operationButtons.map(operation => {
     });
 });
 // Open Calculator End //
-
+function scrollFunc() {
+    window.scrollTo({
+        top: 1000,
+        left: 0,
+        behavior: 'smooth'
+    });
+}
 
 AOS.init();

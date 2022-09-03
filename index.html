@@ -17,11 +17,13 @@
 <body>
     
     <div class="container">
-        <div class="button-selection">
-            <button ata-aos="fade-right" id="tipCalculator">TipCalculator</button>
-            <button ata-aos="fade-left" id="whoPaysTheBill">WhoPaysTheBIll</button>
-            <button ata-aos="fade-left" id="splitTheBill">SplitTheBill</button>
-            <button ata-aos="fade-left" id="openCalculator">OpenCalculator</button>
+        <div class="container-main">
+            <div class="button-selection">
+                <button data-aos="fade-right" data-aos-duration="1500" id="tipCalculator">TipCalculator</button>
+                <button data-aos="zoom-in-down" data-aos-duration="1500" id="whoPaysTheBill">WhoPaysTheBIll</button>
+                <button data-aos="zoom-in-up" data-aos-duration="1500" id="splitTheBill">SplitTheBill</button>
+                <button data-aos="fade-left" data-aos-duration="1500" id="openCalculator">OpenCalculator</button>
+            </div>
         </div>
         <div class="container-main hide" id="tipCalculatorDiv">
             <h1>Tip Calculator</h1>
@@ -103,7 +105,7 @@
             </div>
         </div>
 
-        <div class="container-main" id="openCalculatorDiv">
+        <div class="container-main hide" id="openCalculatorDiv">
             <h1>Calculator</h1>
             <div class="container-input calculator">
                 <div class="display">
@@ -136,45 +138,7 @@
                     <button id="button">.</button>
                     <button id="button">0</button>
                     <button id="equals" class="extended">=</button>
-                </div>             <!-- <div class="main">
-                    <div class="current">
-                        <p id="current"></p>
-                    </div>
-                    <div class="divider">
-                        <div class="wide">
-                            <button id="allClear">AC</button>
-                        </div>
-                        <div>
-                            <button id="delete">DEL</button>
-                        </div>
-                        <div>
-                            <button id="operator" class="darker">/</button>
-                        </div>
-                    </div>
-                    <div class="divider">
-                        <div><button id="button">7</button></div>
-                        <div><button id="button">8</button></div>
-                        <div><button id="button">9</button></div>
-                        <div><button id="operator" class="darker">*</button></div>
-                    </div>
-                    <div class="divider">
-                        <div><button id="button">4</button></div>
-                        <div><button id="button">5</button></div>
-                        <div><button id="button">6</button></div>
-                        <div><button id="operator" class="darker">-</button></div>
-                    </div>
-                    <div class="divider">
-                        <div><button id="button">1</button></div>
-                        <div><button id="button">2</button></div>
-                        <div><button id="button">3</button></div>
-                        <div><button id="operator" class="darker">+</button></div>
-                    </div>
-                    <div class="divider">
-                        <div><button id="button">.</button></div>
-                        <div><button id="button">0</button></div>
-                        <div class="wide"><button id="equals" class="darker" id="equals">=</button></div>
-                    </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>

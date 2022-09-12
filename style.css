@@ -59,7 +59,6 @@ h3 {
     flex-direction: column;
     height: 768px;
     width: 578px;
-    border: 1px solid aliceblue;
     border-radius: 5px;
 }
 
@@ -181,6 +180,10 @@ h3 {
         width: 100vw;
         border: none;
     }
+
+    .button button {
+        width: 9.5rem;
+    }
 }
 
 /* Open Calculator */
@@ -221,8 +224,8 @@ h3 {
 }
 
 .calculator {
-    box-shadow: -10px 10px 20px black;
-    border: 1px solid black;
+    /* box-shadow: -10px 10px 20px black; */
+    border: 1px solid rgba(255, 255, 255, 0.486);
 }
 
 @media only screen and (max-width: 390px) {
@@ -235,5 +238,4 @@ h3 {
         border: 1px solid black;
     }
 }
-
 /* Open Calculator End */

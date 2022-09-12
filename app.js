@@ -75,7 +75,6 @@ function resetFunction() {
 
 // Who Pays The Bill Start //
 const resetTwo = document.querySelector('#resetTwo');
-
 const appendContainer = document.querySelector('#appendContainer');
 const addNameButton = document.querySelector('#addNameButton');
 const startButton = document.querySelector('#startButton');
@@ -215,6 +214,7 @@ operationButtons.map(operation => {
     });
 });
 // Open Calculator End //
+
 function scrollFunc() {
     window.scrollTo({
         top: 1000,
